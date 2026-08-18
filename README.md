@@ -1,54 +1,58 @@
 # DiscountedTokens — Cheap GPT-5.x API
 
 [![Live](https://img.shields.io/badge/live-discountedtokens.com-blue)](https://discountedtokens.com)
+[![Stripe](https://img.shields.io/badge/payments-Stripe-green)](https://discountedtokens.com/guest)
+[![Harnesses](https://img.shields.io/badge/OpenAI%20%2B%20Anthropic%20%2B%20Responses-compatible-purple)](https://discountedtokens.com/docs)
 
-**Frontier GPT-5.x models at ~80% below retail market rates.** One OpenAI-compatible / Anthropic-compatible / Responses-compatible API key. Buy credits in minutes — no signup required for AI agents.
+**Frontier GPT-5.x models at ~80% below retail — one key for every harness. Instant credits, no signup for agents.**
 
-## Why
+Buy credits by card (Stripe) or crypto (USDT/USDC). OpenAI-compatible, Anthropic-compatible, and Responses (Codex/JCode) endpoints from a single base URL.
 
-Most model APIs charge $2–$10 per million input tokens. DiscountedTokens runs the same GPT-5.x family you already use, from a low-cost verified pool, at a fraction of that. Get GPT-5.5 class models for pennies.
-
-## Quick start (30 seconds)
+## Quick start (60 seconds)
 
 ```bash
-# 1. Buy credits (or create an account + dashboard)
-#    https://discountedtokens.com/guest
-
-# 2. Use any OpenAI-compatible client
+# 1. Buy credits — https://discountedtokens.com/guest (no account needed)
+# 2. Use any OpenAI-compatible client:
 curl https://discountedtokens.com/v1/chat/completions \
   -H "Authorization: Bearer sk-res-YOUR_KEY" \
   -H "Content-Type: application/json" \
   -d '{"model":"gpt-5.5","messages":[{"role":"user","content":"hello"}]}'
 ```
 
-## Models (USD per 1M tokens)
+Or point your existing harness at it:
+```python
+from openai import OpenAI
+client = OpenAI(base_url="https://discountedtokens.com/v1", api_key="sk-res-YOUR_KEY")
+```
 
-| Model | In | Out |
-|---|---|---|
-| GPT-5.6 | $0.80 | $4.80 |
-| GPT-5.6 Sol | $0.80 | $4.80 |
-| GPT-5.6 Terra | $0.32 | $1.92 |
-| GPT-5.5 | $0.80 | $4.80 |
-| GPT-5.4 | $0.40 | $2.40 |
-| GPT-5.4 Mini | $0.12 | $0.72 |
+## Pricing (USD per 1M tokens — live from the site)
 
-*Pricing shown after 300% markup on upstream pool (current catalog prices on site may differ).*
+| Model | Input | Output | Retail ref | You save |
+|---|---|---|---|---|
+| GPT-5.6 | $0.80 | $4.80 | $2.00 / $10.00 | ~60% |
+| GPT-5.6 Sol | $0.80 | $4.80 | $2.00 / $10.00 | ~60% |
+| GPT-5.6 Terra | $0.32 | $1.92 | $0.80 / $4.00 | ~60% |
+| GPT-5.5 | $0.80 | $4.80 | $2.00 / $10.00 | ~60% |
+| GPT-5.4 | $0.40 | $2.40 | $1.00 / $6.00 | ~60% |
+| GPT-5.4 Mini | $0.12 | $0.72 | $0.30 / $1.80 | ~60% |
+
+Pricing updates live — see https://discountedtokens.com/pricing
 
 ## Harness compatibility
 
-Works with any OpenAI, Responses, or Anthropic-compatible harness:
-
-- **OpenAI SDK** (Python/Node), `base_url = https://discountedtokens.com/v1`
-- **Codex / JCode** — `POST /v1/responses`
-- **Claude Code** — `POST /v1/messages`
-- Cursor, LangChain, LibreChat, OpenWebUI
+| Harness | Endpoint |
+|---|---|
+| OpenAI SDK (Python/Node) | `POST /v1/chat/completions` |
+| Codex / JCode | `POST /v1/responses` |
+| Claude Code | `POST /v1/messages` (x-api-key) |
+| Cursor, LangChain, LibreChat, OpenWebUI | `base_url` swap |
 
 ## Features
 
-- ⚡ **99.99% uptime** on Cloudflare edge (36 regions)
-- 🤖 **AI-agent ready** — instant credits, no KYC, `llms.txt` for discovery
-- 💳 **Pay with card (Stripe) or crypto (USDT/USDC)**
-- 📊 **Dashboard** with per-model usage, spend, token counts
+- ⚡ 99.99% uptime on Cloudflare edge — 36 regions
+- 🤖 Agent-ready: instant credits, no KYC, `llms.txt` discovery, guest checkout
+- 💳 Card (Stripe) + crypto (USDT/USDC)
+- 📊 Dashboard with per-model usage, spend, token counts
 - 🔗 One key for every harness
 
 ## Links
@@ -56,4 +60,9 @@ Works with any OpenAI, Responses, or Anthropic-compatible harness:
 - Site: https://discountedtokens.com
 - Pricing: https://discountedtokens.com/pricing
 - Docs: https://discountedtokens.com/docs
+- Cost guide: https://discountedtokens.com/guide
 - Agent discovery: https://discountedtokens.com/llms.txt
+
+## Disclaimer
+
+Discount resale of model capacity from a verified upstream pool. Model identity is probed/verified before listing. Use at your own discretion for production workloads.
