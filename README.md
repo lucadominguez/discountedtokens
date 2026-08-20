@@ -60,7 +60,7 @@ Pricing updates when we add verified models — see https://discountedtokens.com
 - 💳 Card (Stripe) + crypto (USDT/USDC)
 - 📊 Dashboard with per-model usage, spend, token counts
 - 🔗 One key for every harness
-- 🖤 Dark premium UI: featured discount cards, rotating announcement banners, live pricing ticker
+- 🖤 Light "Slate & Violet" UI (Attentify design language): Space Grotesk + Inter + JetBrains Mono, aurora + dot grid texture, featured discount cards, rotating announcement banner, live pricing ticker
 
 ## Links
 
