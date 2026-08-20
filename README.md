@@ -40,7 +40,10 @@ The site serves a full catalogue page at https://discountedtokens.com/models —
 | GPT-5.6 Terra | $0.32 | $1.92 | $2.00 / $12.00 | 84% |
 | GPT-5.5 | $0.80 | $4.80 | $5.00 / $30.00 | 84% |
 | GPT-5.4 | $0.40 | $2.40 | $2.50 / $15.00 | 84% |
+| GPT-5.4 (2026-03-05) | $0.40 | $2.40 | $2.50 / $15.00 | 84% |
 | GPT-5.4 Mini | $0.12 | $0.72 | $0.75 / $4.50 | 84% |
+
+Price history: the site auto-snapshots our rates + the OpenRouter list every 5h into a visible history table (first-recorded date, snapshot count, current rates, delta since first). See https://discountedtokens.com/pricing
 
 Pricing updates when we add verified models — see https://discountedtokens.com/pricing
 
