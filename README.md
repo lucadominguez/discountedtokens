@@ -65,6 +65,14 @@ Pricing updates when we add verified models — see https://discountedtokens.com
 - 🔗 One key for every harness
 - 🖤 Light "Slate & Violet" UI (Attentify design language): Space Grotesk + Inter + JetBrains Mono, aurora + dot grid texture, featured discount cards, rotating announcement banner, live pricing ticker
 
+## Localized versions
+
+- 中文: https://discountedtokens.com/cn
+- हिन्दी: https://discountedtokens.com/in
+- Español: https://discountedtokens.com/es
+- Deutsch: https://discountedtokens.com/de
+- Français: https://discountedtokens.com/fr
+
 ## Links
 
 - Site: https://discountedtokens.com
