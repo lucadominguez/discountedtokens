@@ -59,9 +59,14 @@ Pricing updates live — see https://discountedtokens.com/pricing
 
 - Site: https://discountedtokens.com
 - Pricing: https://discountedtokens.com/pricing
+- Free LLM tiers: https://discountedtokens.com/free
 - Docs: https://discountedtokens.com/docs
 - Cost guide: https://discountedtokens.com/guide
 - Agent discovery: https://discountedtokens.com/llms.txt
+
+## Free LLM tiers (linked from the site)
+
+The site now runs a curated `/free` page mapping every meaningful free LLM tier (2026) so the price floor is visible: Google Gemini, Groq, Cerebras, OpenRouter, NVIDIA NIM, GitHub Models, and Hugging Face offer recurring no-card access; Anthropic, OpenAI, Mistral, Cohere, xAI, and Together give trial credits. Free tiers cap out and rate-limit per-minute — prepaid discounted credits cover the consistent frontier workload. See https://discountedtokens.com/free
 
 ## Disclaimer
 
